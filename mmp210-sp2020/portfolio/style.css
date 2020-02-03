@@ -1,4 +1,55 @@
-body{padding: 0; margin: 0; background: #abff9f;}
-img{}
-#doggy{position: relative;top:100px;left:100px;}
-.left{}
+
+body{
+	margin: 12px 20% 35px 20%;
+	background-color: #80c9e0;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	color:#004466;
+	clear:both;
+}
+h1{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 40px;
+	color: #000066;
+	background-color: #fff5e6;
+	padding: 10px 10px 10px 10px;
+	height:48px;
+	text-align: center;
+	outline-style: double;
+	clear:both;
+}
+.right-image{ 
+	max-width:100%; 
+	height: auto;
+	float: right;
+	margin:12px 0 12px 15px;
+}
+.left-image{	
+	max-width:100%; 
+	height: auto;
+	float: left;
+	margin:10px 15px 12px 0;
+
+}
+.middle-image{
+	max-width:100%; 
+	height: auto;
+	float: middle;
+	margin:12px 0 12px 0;
+}
+p{
+	text-align: justify;
+	line-height: 24px;
+}
+a{
+	color:#b300b3;
+}
+
+@media only screen and (max-width: 1000px) {
+		h1{
+			font-size: 25px;
+		}
+		body{
+			margin:25px;
+		}
+
+}
