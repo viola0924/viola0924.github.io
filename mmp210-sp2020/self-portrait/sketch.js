@@ -1,12 +1,14 @@
 
 function setup() {
   createCanvas(400, 400);
+  img2=loadImage('2.jpg');
 }
 
 function draw() {
   
   background(210,250,230);
   console.log("x: " + mouseX + ", y: " + mouseY);
+ 
 fill(0,0,0);
 beginShape();
   vertex(100,350);
@@ -55,11 +57,18 @@ endShape();
 fill(255,255,255);
   push();
 noStroke();
-  let x1 = map(mouseX, 0, width, 160, 167);
+  let x1 = map(mouseX, 0, width, 160, 179, true);
   ellipse(x1, 175, 10, 8);
-  let x2 = map(mouseX, 0, width, 220, 227);
+  let x2 = map(mouseX, 0, width, 220, 239,true);
   ellipse(x2, 175, 10, 8);
   pop();
-  //？？？？？
+  //motion
+  
+  push();
+  translate(320,100);
+  rotate(frameCount*PI/64);
+  image(img2,-25,-25,50,50);
+  
+  pop();  
 
 }
