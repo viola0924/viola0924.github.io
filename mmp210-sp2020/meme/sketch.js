@@ -15,7 +15,7 @@ function draw() {
    if (mouseIsPressed) 
    {scale(i); i+=0.1
   image(img,0,0,img.width/3,img.height/3);
-    text("2020!Surprise!",25,50);
+    text("2020!Again!",25,50);
   if (i>2.5){ 
         i=0.1
     }
